@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hip-Hop Elements</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<!-- NEW -->
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"> HIP-HOP ELEMENTS </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Contacts</a>
+              </li>
+            </ul>
+            <a href="https://www.patreon.com/" class="btn btn-brand ms-lg-3">Donate</a>
+          </div>
+        </div>
+      </nav>
+
+    <section class="section-padding bg-light" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+                    <div class="section-title">
+                        <h1 class="display-4 text-white fw-semibold">Let's collaborate</h1>
+                        <div class="line bg-white"></div>
+                        <p class="text-white">Always looking forward to participating and organizing events</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center" data-aos="fade-down" data-aos-delay="250">
+                <div class="col-lg-8">
+                    <form
+                        onsubmit="sendEmail(event)"
+                        class="row g-3 p-lg-5 p-4 bg-white theme-shadow"
+                    >
+                        <div class="form-group col-lg-6">
+                            <input id="first-name" type="text" class="form-control" placeholder="Enter first name" required>
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <input id="last-name" type="text" class="form-control" placeholder="Enter last name" required>
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <input id="email" type="email" class="form-control" placeholder="Enter Email address" required>
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <input id="subject" type="text" class="form-control" placeholder="Enter subject" required>
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <textarea id="message" rows="5" class="form-control" placeholder="Enter Message" required></textarea>
+                        </div>
+                        <!-- Newsletter Subscription -->
+                        <div class="form-group col-lg-12">
+                            <div class="form-check">
+                                <input id="newsletter" type="checkbox" class="form-check-input">
+                                <label class="form-check-label" for="newsletter">I would like to subscribe to a newsletter</label>
+                            </div>
+                        </div>
+                        <!-- How Did You Hear About Us -->
+                        <div class="form-group col-lg-12">
+                            <label>How did you hear about us?</label>
+                            <div class="form-check">
+                                <input id="social-media" name="referral" type="radio" class="form-check-input" value="Social Media" required>
+                                <label class="form-check-label" for="social-media">Social media</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="friend" name="referral" type="radio" class="form-check-input" value="A Friend">
+                                <label class="form-check-label" for="friend">A friend</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="advertising" name="referral" type="radio" class="form-check-input" value="Advertising">
+                                <label class="form-check-label" for="advertising">Advertising</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="other" name="referral" type="radio" class="form-check-input" value="Other">
+                                <label class="form-check-label" for="other">Other</label>
+                            </div>
+                        </div>
+                        <!-- Specify Other -->
+                        <div class="form-group col-lg-12">
+                            <textarea id="specify-other" rows="3" class="form-control" placeholder="If 'Other,' please specify"></textarea>
+                        </div>
+                        <div class="form-group col-lg-6 d-grid">
+                            <button type="submit" class="btn btn-brand">Send Message</button>
+                        </div>
+                        <div class="form-group col-lg-6 d-grid">
+                            <button type="reset" class="btn btn-brand">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-dark">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h5 class="text-white">HIP-HOP ELEMENTS</h5>
+                        <div class="line"></div>
+                        <p>Check us out:</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/hiphop.elementai/"><i class="ri-instagram-fill"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=61557017471629"><i class="ri-facebook-fill"></i></a>
+                            <a href="https://www.youtube.com/@poeticjustice5841"><i class="ri-youtube-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row g-4 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">© Copyright Hip-Hop Elements. All Rights Reserved</p>
+                    </div>
+                    <div class="col-auto">
+                        <p class="mb-0">Powered by <a href="https://www.linkedin.com/in/normantas-noreika-769637205/">Normantas</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

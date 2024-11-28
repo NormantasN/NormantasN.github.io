@@ -1,0 +1,318 @@
+/* FONTS */
+@import url(../css/clash-display.css);
+
+
+
+/* VARIABLES */
+:root {
+    --c-dark: #212529;
+    --c-brand: #652e43;
+    --c-brand-light: #b297a1;
+    --c-brand-background: #e6eb8f;
+    --c-brand-rgb: 101, 46, 67;
+    --c-body: #727272;
+    --font-base: "ClashDisplay", sans-serif; /* serif, sans serif, cursive, fantasy, and monospace */
+    --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+    --transition: all 0.5s ease;
+}
+
+/* RESET & HELPERS */
+body {
+    font-family: var(--font-base);
+    line-height: 1.7;
+    color: var(--c-body);
+}
+
+h1, h2, h3,h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+    color: var(--c-dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--c-brand);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--c-brand-light);
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.theme-shadow {
+    box-shadow: var(--box-shadow);
+}
+
+/* IMAGE ZOOM */
+.image-zoom {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.image-zoom-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.image-zoom-wrapper img{
+     transition: var(--transition);
+}
+
+.image-zoom:hover .image-zoom-wrapper img {
+    transform: scale(1.1);
+}
+
+
+.navbar{
+    background-color: var(--c-brand-background) !important;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .navbar .nav-link {
+    color: var(--c-brand) !important; /* Change navbar link text color */
+    font-size: 125%;
+    font-weight: 500;
+  }
+  
+  .navbar-nav .nav-link.active {
+    color: var(--c-brand-light);
+  }
+  
+  .navbar-brand {
+    font: var(--font-base);
+    font-size: 175%;
+    font-weight: bold;
+    color: var(--c-brand) !important; /* Change brand color */
+  }
+
+
+/* BTN */
+.btn {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 24px;
+}
+
+.btn-brand {
+    background-color: var(--c-brand);
+    border-color: var(--c-brand);
+    color: #e0d5d9;
+}
+
+.btn-brand:hover {
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand-light);
+    color: #e0d5d9;
+}
+
+
+/* HERO */
+#hero {
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.507), rgba(var(--c-brand-rgb), 0.438)), url(/media/hiphop/photo2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* SECTION TITLE */
+.section-title {
+    margin-bottom: 40px;
+}
+
+.section-title .line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin: 16px auto 24px auto;
+}
+
+.section-title p {
+    max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--c-dark);
+}
+
+.col-lg-5 p{
+    font-size: 20px;
+  }
+
+
+/* ICONBOX */
+.iconbox {
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--c-brand-rgb), 0.3);
+    color: var(--c-brand);
+    font-size: 34px;
+    flex: none;
+}
+
+
+/* GRAFFITI */
+.graffiti-item .iconbox {
+    background-color: var(--c-brand);
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.graffiti-item:hover .iconbox {
+    opacity: 1;
+    top: 50%;
+}
+
+
+/* CONTACT */
+#contact {
+    position: relative;
+    z-index: 2;
+}
+
+#contact::after {
+    content: "";
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8)), url(/media/hiphop/mission.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#contact .form-control {
+    border-radius: 0;
+}
+
+#contact .form-control:focus {
+    box-shadow: none;
+    border-color: var(--c-brand);
+}
+
+/* FOOTER */
+footer {
+    padding-top: 120px;
+}
+
+.footer-top {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-bottom {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+footer li,
+footer p,
+footer a {
+    color: rgba(255,255,255,0.7);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .line {
+    width: 40px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 100px;
+}
+
+.social-icons a:hover {
+    background-color: var(--c-brand);
+    color: white;
+}
+
+@media print {
+    /* General Reset */
+    * {
+        color: black !important; /* Force black text for better readability */
+        background: none !important; /* Remove background colors and images */
+        box-shadow: none !important; /* Remove shadows */
+    }
+
+    body {
+        font-size: 12pt; /* Increase font size for readability */
+        line-height: 1.5; /* Improve spacing */
+        margin: 1cm; /* Add margins for printing */
+    }
+
+    a {
+        color: black !important; /* Remove color from links */
+        text-decoration: none !important; /* Simplify link appearance */
+    }
+
+    a:after {
+        content: " (" attr(href) ")"; /* Append URLs for printed links */
+        font-size: 10pt;
+        color: #555;
+    }
+
+    img {
+        max-width: 100%; /* Scale images to fit page */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    nav,
+    footer,
+    .no-print {
+        display: none !important; /* Hide navigation, footer, and unnecessary elements */
+    }
+
+    .btn,
+    .iconbox {
+        display: none !important; /* Hide interactive elements */
+    }
+
+    .section-padding {
+        padding: 0; /* Remove excessive padding for a clean layout */
+    }
+
+
+    h1, h2, h3, p, table {
+        page-break-inside: avoid;
+    }
+}
+.underline-link {
+    text-decoration: underline;
+}
